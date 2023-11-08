@@ -28,7 +28,7 @@ const WidgetsDropdown = () => {
               </span>
             </>
           }
-          title="Users"
+          title="Usuários"
           action={
             <CDropdown alignment="end">
               <CDropdownToggle color="transparent" caret={false} className="p-0">
@@ -115,7 +115,7 @@ const WidgetsDropdown = () => {
               </span>
             </>
           }
-          title="Income"
+          title="Faturamento"
           action={
             <CDropdown alignment="end">
               <CDropdownToggle color="transparent" caret={false} className="p-0">
@@ -201,7 +201,7 @@ const WidgetsDropdown = () => {
               </span>
             </>
           }
-          title="Conversion Rate"
+          title="Taxa de conversão"
           action={
             <CDropdown alignment="end">
               <CDropdownToggle color="transparent" caret={false} className="p-0">
@@ -274,7 +274,7 @@ const WidgetsDropdown = () => {
               </span>
             </>
           }
-          title="Sessions"
+          title="Sessões"
           action={
             <CDropdown alignment="end">
               <CDropdownToggle color="transparent" caret={false} className="p-0">

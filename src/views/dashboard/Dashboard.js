@@ -58,30 +58,30 @@ const Dashboard = () => {
   const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
 
   const progressExample = [
-    { title: 'Visits', value: '29.703 Users', percent: 40, color: 'success' },
-    { title: 'Unique', value: '24.093 Users', percent: 20, color: 'info' },
-    { title: 'Pageviews', value: '78.706 Views', percent: 60, color: 'warning' },
-    { title: 'New Users', value: '22.123 Users', percent: 80, color: 'danger' },
-    { title: 'Bounce Rate', value: 'Average Rate', percent: 40.15, color: 'primary' },
+    { title: 'Visitas', value: '29.703 Users', percent: 40, color: 'success' },
+    { title: 'Exclusivos', value: '24.093 Users', percent: 20, color: 'info' },
+    { title: 'Visualizações', value: '78.706 Views', percent: 60, color: 'warning' },
+    { title: 'Novos usuários', value: '22.123 Users', percent: 80, color: 'danger' },
+    { title: 'Taxa de rejeição', value: 'Average Rate', percent: 40.15, color: 'primary' },
   ]
 
   const progressGroupExample1 = [
-    { title: 'Monday', value1: 34, value2: 78 },
-    { title: 'Tuesday', value1: 56, value2: 94 },
-    { title: 'Wednesday', value1: 12, value2: 67 },
-    { title: 'Thursday', value1: 43, value2: 91 },
-    { title: 'Friday', value1: 22, value2: 73 },
-    { title: 'Saturday', value1: 53, value2: 82 },
-    { title: 'Sunday', value1: 9, value2: 69 },
+    { title: 'Segunda-feira', value1: 34, value2: 78 },
+    { title: 'Terça-feira', value1: 56, value2: 94 },
+    { title: 'Quarta-feira', value1: 12, value2: 67 },
+    { title: 'Quinta-feira', value1: 43, value2: 91 },
+    { title: 'Sexta-feira', value1: 22, value2: 73 },
+    { title: 'Sábado', value1: 53, value2: 82 },
+    { title: 'Domingo', value1: 9, value2: 69 },
   ]
 
   const progressGroupExample2 = [
-    { title: 'Male', icon: cilUser, value: 53 },
-    { title: 'Female', icon: cilUserFemale, value: 43 },
+    { title: 'Homens', icon: cilUser, value: 53 },
+    { title: 'Mulheres', icon: cilUserFemale, value: 43 },
   ]
 
   const progressGroupExample3 = [
-    { title: 'Organic Search', icon: cibGoogle, percent: 56, value: '191,235' },
+    { title: 'Pesquisa orgânica', icon: cibGoogle, percent: 56, value: '191,235' },
     { title: 'Facebook', icon: cibFacebook, percent: 15, value: '51,223' },
     { title: 'Twitter', icon: cibTwitter, percent: 11, value: '37,564' },
     { title: 'LinkedIn', icon: cibLinkedin, percent: 8, value: '27,319' },
@@ -102,7 +102,7 @@ const Dashboard = () => {
         color: 'success',
       },
       payment: { name: 'Mastercard', icon: cibCcMastercard },
-      activity: '10 sec ago',
+      activity: '10 segundos atrás',
     },
     {
       avatar: { src: avatar2, status: 'danger' },
@@ -111,14 +111,14 @@ const Dashboard = () => {
         new: false,
         registered: 'Jan 1, 2021',
       },
-      country: { name: 'Brazil', flag: cifBr },
+      country: { name: 'Brasil', flag: cifBr },
       usage: {
         value: 22,
         period: 'Jun 11, 2021 - Jul 10, 2021',
         color: 'info',
       },
       payment: { name: 'Visa', icon: cibCcVisa },
-      activity: '5 minutes ago',
+      activity: '5 minutos atrás',
     },
     {
       avatar: { src: avatar3, status: 'warning' },
@@ -130,19 +130,19 @@ const Dashboard = () => {
         color: 'warning',
       },
       payment: { name: 'Stripe', icon: cibCcStripe },
-      activity: '1 hour ago',
+      activity: '1 hora atrás',
     },
     {
       avatar: { src: avatar4, status: 'secondary' },
       user: { name: 'Enéas Kwadwo', new: true, registered: 'Jan 1, 2021' },
-      country: { name: 'France', flag: cifFr },
+      country: { name: 'França', flag: cifFr },
       usage: {
         value: 98,
         period: 'Jun 11, 2021 - Jul 10, 2021',
         color: 'danger',
       },
       payment: { name: 'PayPal', icon: cibCcPaypal },
-      activity: 'Last month',
+      activity: 'Mês passado',
     },
     {
       avatar: { src: avatar5, status: 'success' },
@@ -151,14 +151,14 @@ const Dashboard = () => {
         new: true,
         registered: 'Jan 1, 2021',
       },
-      country: { name: 'Spain', flag: cifEs },
+      country: { name: 'Espanha', flag: cifEs },
       usage: {
         value: 22,
         period: 'Jun 11, 2021 - Jul 10, 2021',
         color: 'primary',
       },
       payment: { name: 'Google Wallet', icon: cibCcApplePay },
-      activity: 'Last week',
+      activity: 'Semana passada',
     },
     {
       avatar: { src: avatar6, status: 'danger' },
@@ -167,14 +167,14 @@ const Dashboard = () => {
         new: true,
         registered: 'Jan 1, 2021',
       },
-      country: { name: 'Poland', flag: cifPl },
+      country: { name: 'Polônia', flag: cifPl },
       usage: {
         value: 43,
         period: 'Jun 11, 2021 - Jul 10, 2021',
         color: 'success',
       },
       payment: { name: 'Amex', icon: cibCcAmex },
-      activity: 'Last week',
+      activity: 'Semana passada',
     },
   ]
 
@@ -186,16 +186,16 @@ const Dashboard = () => {
           <CRow>
             <CCol sm={5}>
               <h4 id="traffic" className="card-title mb-0">
-                Traffic
+                Ánalises
               </h4>
-              <div className="small text-medium-emphasis">January - July 2021</div>
+              <div className="small text-medium-emphasis">Janeiro - Julho 2021</div>
             </CCol>
             <CCol sm={7} className="d-none d-md-block">
               <CButton color="primary" className="float-end">
                 <CIcon icon={cilCloudDownload} />
               </CButton>
               <CButtonGroup className="float-end me-3">
-                {['Day', 'Month', 'Year'].map((value) => (
+                {['Dia', 'Mês', 'Ano'].map((value) => (
                   <CButton
                     color="outline-secondary"
                     key={value}
@@ -211,10 +211,10 @@ const Dashboard = () => {
           <CChartLine
             style={{ height: '300px', marginTop: '40px' }}
             data={{
-              labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+              labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho'],
               datasets: [
                 {
-                  label: 'My First dataset',
+                  label: 'Primeiro conjunto de dados',
                   backgroundColor: hexToRgba(getStyle('--cui-info'), 10),
                   borderColor: getStyle('--cui-info'),
                   pointHoverBackgroundColor: getStyle('--cui-info'),
@@ -231,7 +231,7 @@ const Dashboard = () => {
                   fill: true,
                 },
                 {
-                  label: 'My Second dataset',
+                  label: 'Segundo conjunto de dados',
                   backgroundColor: 'transparent',
                   borderColor: getStyle('--cui-success'),
                   pointHoverBackgroundColor: getStyle('--cui-success'),
@@ -247,7 +247,7 @@ const Dashboard = () => {
                   ],
                 },
                 {
-                  label: 'My Third dataset',
+                  label: 'Terceiro conjunto de dados',
                   backgroundColor: 'transparent',
                   borderColor: getStyle('--cui-danger'),
                   pointHoverBackgroundColor: getStyle('--cui-danger'),
@@ -313,20 +313,20 @@ const Dashboard = () => {
       <CRow>
         <CCol xs>
           <CCard className="mb-4">
-            <CCardHeader>Traffic {' & '} Sales</CCardHeader>
+            <CCardHeader>Ánalises {' & '} Vendas</CCardHeader>
             <CCardBody>
               <CRow>
                 <CCol xs={12} md={6} xl={6}>
                   <CRow>
                     <CCol sm={6}>
                       <div className="border-start border-start-4 border-start-info py-1 px-3">
-                        <div className="text-medium-emphasis small">New Clients</div>
+                        <div className="text-medium-emphasis small">Clientes novos</div>
                         <div className="fs-5 fw-semibold">9,123</div>
                       </div>
                     </CCol>
                     <CCol sm={6}>
                       <div className="border-start border-start-4 border-start-danger py-1 px-3 mb-3">
-                        <div className="text-medium-emphasis small">Recurring Clients</div>
+                        <div className="text-medium-emphasis small">Clientes recorrentes</div>
                         <div className="fs-5 fw-semibold">22,643</div>
                       </div>
                     </CCol>
@@ -350,13 +350,13 @@ const Dashboard = () => {
                   <CRow>
                     <CCol sm={6}>
                       <div className="border-start border-start-4 border-start-warning py-1 px-3 mb-3">
-                        <div className="text-medium-emphasis small">Pageviews</div>
+                        <div className="text-medium-emphasis small">Visualizações</div>
                         <div className="fs-5 fw-semibold">78,623</div>
                       </div>
                     </CCol>
                     <CCol sm={6}>
                       <div className="border-start border-start-4 border-start-success py-1 px-3 mb-3">
-                        <div className="text-medium-emphasis small">Organic</div>
+                        <div className="text-medium-emphasis small">Orgânicos</div>
                         <div className="fs-5 fw-semibold">49,123</div>
                       </div>
                     </CCol>
@@ -405,11 +405,11 @@ const Dashboard = () => {
                     <CTableHeaderCell className="text-center">
                       <CIcon icon={cilPeople} />
                     </CTableHeaderCell>
-                    <CTableHeaderCell>User</CTableHeaderCell>
-                    <CTableHeaderCell className="text-center">Country</CTableHeaderCell>
-                    <CTableHeaderCell>Usage</CTableHeaderCell>
-                    <CTableHeaderCell className="text-center">Payment Method</CTableHeaderCell>
-                    <CTableHeaderCell>Activity</CTableHeaderCell>
+                    <CTableHeaderCell>Usuário</CTableHeaderCell>
+                    <CTableHeaderCell className="text-center">País</CTableHeaderCell>
+                    <CTableHeaderCell>Uso</CTableHeaderCell>
+                    <CTableHeaderCell className="text-center">Tipo de pagamento</CTableHeaderCell>
+                    <CTableHeaderCell>Atividades</CTableHeaderCell>
                   </CTableRow>
                 </CTableHead>
                 <CTableBody>
@@ -421,7 +421,7 @@ const Dashboard = () => {
                       <CTableDataCell>
                         <div>{item.user.name}</div>
                         <div className="small text-medium-emphasis">
-                          <span>{item.user.new ? 'New' : 'Recurring'}</span> | Registered:{' '}
+                          <span>{item.user.new ? 'Novo' : 'Recorrente'}</span> | Cadastrado:{' '}
                           {item.user.registered}
                         </div>
                       </CTableDataCell>
@@ -443,7 +443,7 @@ const Dashboard = () => {
                         <CIcon size="xl" icon={item.payment.icon} />
                       </CTableDataCell>
                       <CTableDataCell>
-                        <div className="small text-medium-emphasis">Last login</div>
+                        <div className="small text-medium-emphasis">Último login</div>
                         <strong>{item.activity}</strong>
                       </CTableDataCell>
                     </CTableRow>
