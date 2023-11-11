@@ -1,7 +1,6 @@
 import React from 'react'
 import {
   CCard,
-  CCardHeader,
   CCardBody,
   CRow,
   CCol,
@@ -12,7 +11,6 @@ import {
   CPagination,
   CPaginationItem,
 } from '@coreui/react'
-import { DocsLink } from 'src/components'
 import { logo } from 'src/assets/brand/logo'
 
 const Typography = () => {

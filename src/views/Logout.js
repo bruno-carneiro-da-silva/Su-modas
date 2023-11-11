@@ -13,7 +13,7 @@ export default () => {
       history('/login')
     }
     doLogout()
-  }, [])
+  }, [api, history])
 
   return null
 }
