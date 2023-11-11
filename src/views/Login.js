@@ -38,6 +38,7 @@ const Login = () => {
         history('/login')
       }
     } else {
+      setError(error)
       alert('Preencha os campos!')
     }
   }
