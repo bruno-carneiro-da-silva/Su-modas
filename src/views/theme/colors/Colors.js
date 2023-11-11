@@ -1,9 +1,6 @@
 import PropTypes from 'prop-types'
-import React, { useEffect, useState, createRef, useRef } from 'react'
-import classNames from 'classnames'
+import React, { useEffect, useState, useRef } from 'react'
 import {
-  CRow,
-  CCol,
   CCard,
   CCardHeader,
   CCardBody,
@@ -23,7 +20,6 @@ import {
   CFormInput,
   CInputGroup,
 } from '@coreui/react'
-import { rgbToHex } from '@coreui/utils'
 import CIcon from '@coreui/icons-react'
 import {
   cibCcAmex,
@@ -236,7 +232,6 @@ const Colors = () => {
                 </CTableHeaderCell>
                 <CTableHeaderCell>Nome</CTableHeaderCell>
                 <CTableHeaderCell className="text-center">Data</CTableHeaderCell>
-                {/* <CTableHeaderCell>Porcentagem de compras</CTableHeaderCell> */}
                 <CTableHeaderCell className="text-center">Pagamento</CTableHeaderCell>
                 <CTableHeaderCell>Atividade</CTableHeaderCell>
               </CTableRow>
