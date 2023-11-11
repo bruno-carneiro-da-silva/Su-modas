@@ -58,11 +58,11 @@ const Dashboard = () => {
   const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
 
   const progressExample = [
-    { title: 'Visitas', value: '29.703 Users', percent: 40, color: 'success' },
-    { title: 'Exclusivos', value: '24.093 Users', percent: 20, color: 'info' },
+    { title: 'Visitas', value: '29.703 Usuários', percent: 40, color: 'success' },
+    { title: 'Exclusivos', value: '24.093 Usuários', percent: 20, color: 'info' },
     { title: 'Visualizações', value: '78.706 Views', percent: 60, color: 'warning' },
-    { title: 'Novos usuários', value: '22.123 Users', percent: 80, color: 'danger' },
-    { title: 'Taxa de rejeição', value: 'Average Rate', percent: 40.15, color: 'primary' },
+    { title: 'Novos usuários', value: '22.123 Usuários', percent: 80, color: 'danger' },
+    { title: 'Taxa de rejeição', value: 'Média', percent: 40.15, color: 'primary' },
   ]
 
   const progressGroupExample1 = [
