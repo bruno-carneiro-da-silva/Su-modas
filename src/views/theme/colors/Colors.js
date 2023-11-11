@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import React, { useEffect, useState, createRef } from 'react'
+import React, { useEffect, useState, createRef, useRef } from 'react'
 import classNames from 'classnames'
 import {
   CRow,
@@ -47,47 +47,47 @@ import avatar4 from 'src/assets/images/avatars/4.jpg'
 import avatar5 from 'src/assets/images/avatars/5.jpg'
 import avatar6 from 'src/assets/images/avatars/6.jpg'
 
-const ThemeView = () => {
-  const [color, setColor] = useState('rgb(255, 255, 255)')
-  const ref = createRef()
+// const ThemeView = () => {
+//   const [color, setColor] = useState('rgb(255, 255, 255)')
+//   const ref = createRef()
 
-  useEffect(() => {
-    const el = ref.current.parentNode.firstChild
-    const varColor = window.getComputedStyle(el).getPropertyValue('background-color')
-    setColor(varColor)
-  }, [ref])
+//   useEffect(() => {
+//     const el = ref.current.parentNode.firstChild
+//     const varColor = window.getComputedStyle(el).getPropertyValue('background-color')
+//     setColor(varColor)
+//   }, [ref])
 
-  return (
-    <table className="table w-100" ref={ref}>
-      <tbody>
-        <tr>
-          <td className="text-medium-emphasis">HEX:</td>
-          <td className="font-weight-bold">{rgbToHex(color)}</td>
-        </tr>
-        <tr>
-          <td className="text-medium-emphasis">RGB:</td>
-          <td className="font-weight-bold">{color}</td>
-        </tr>
-      </tbody>
-    </table>
-  )
-}
+//   return (
+//     <table className="table w-100" ref={ref}>
+//       <tbody>
+//         <tr>
+//           <td className="text-medium-emphasis">HEX:</td>
+//           <td className="font-weight-bold">{rgbToHex(color)}</td>
+//         </tr>
+//         <tr>
+//           <td className="text-medium-emphasis">RGB:</td>
+//           <td className="font-weight-bold">{color}</td>
+//         </tr>
+//       </tbody>
+//     </table>
+//   )
+// }
 
-const ThemeColor = ({ className, children }) => {
-  const classes = classNames(className, 'theme-color w-75 rounded mb-3')
-  return (
-    <CCol xs={12} sm={6} md={4} xl={2} className="mb-4">
-      <div className={classes} style={{ paddingTop: '75%' }}></div>
-      {children}
-      <ThemeView />
-    </CCol>
-  )
-}
+// const ThemeColor = ({ className, children }) => {
+//   const classes = classNames(className, 'theme-color w-75 rounded mb-3')
+//   return (
+//     <CCol xs={12} sm={6} md={4} xl={2} className="mb-4">
+//       <div className={classes} style={{ paddingTop: '75%' }}></div>
+//       {children}
+//       <ThemeView />
+//     </CCol>
+//   )
+// }
 
-ThemeColor.propTypes = {
-  children: PropTypes.node,
-  className: PropTypes.string,
-}
+// ThemeColor.propTypes = {
+//   children: PropTypes.node,
+//   className: PropTypes.string,
+// }
 
 const tableExample = [
   {
@@ -181,6 +181,21 @@ const tableExample = [
 ]
 
 const Colors = () => {
+  const ref = useRef(null)
+  const [value, setValue] = useState('')
+
+  Colors.propTypes = {
+    onClick: PropTypes.func,
+  }
+
+  // const handleSetValues = () => {
+  // }
+
+  useEffect(() => {
+    ref.current.focus()
+    console.log(ref.current.value)
+  }, [value])
+
   return (
     <>
       <CCard className="mb-4">
@@ -188,6 +203,9 @@ const Colors = () => {
         <div className="d-grid gap-2 p-3 d-md-flex justify-content-md-end flex items-center ">
           <CInputGroup className=" w-50 items-center justify-start">
             <CFormInput
+              ref={ref}
+              value={value}
+              onChange={(e) => setValue(e.target.value)}
               placeholder="Pesquisar"
               aria-label="Username"
               aria-describedby="basic-addon1"

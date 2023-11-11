@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { AppContent, AppSidebar, AppFooter, AppHeader } from '../components/index'
-import { useRoutes } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import useApi from '../services/api'
 
 const DefaultLayout = () => {
   const [loading, setLoading] = useState(true)
   const api = useApi()
-  const history = useRoutes()
+  const history = useNavigate()
 
   useEffect(() => {
     const checkLogin = async () => {
@@ -16,14 +16,14 @@ const DefaultLayout = () => {
           setLoading(false)
         } else {
           alert(result.error)
-          history.push('/login')
+          history('/login')
         }
       } else {
-        history.push('/login')
+        history('/login')
       }
     }
     checkLogin()
-  }, [])
+  }, [api, history])
 
   return (
     <div>

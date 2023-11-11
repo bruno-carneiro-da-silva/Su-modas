@@ -1,11 +1,11 @@
 const baseURL = 'https://api.b7web.com.br/devcond/api/admin'
 
-const request = async (params, methods, endpoint, token = null) => {
-  methods = methods.toLowerCase()
+const request = async (params, method, endpoint, token = null) => {
+  method = method.toLowerCase()
   let fullURL = `${baseURL}${endpoint}`
   let body = null
 
-  switch (methods) {
+  switch (method) {
     case 'get':
       let queryString = new URLSearchParams(params).toString()
       fullURL += `?${queryString}`
@@ -16,14 +16,14 @@ const request = async (params, methods, endpoint, token = null) => {
       body = JSON.stringify(params)
       break
     default:
-      throw new Error(`Invalid method: ${methods}`)
+      throw new Error(`Invalid method: ${method}`)
   }
   let headers = { 'Content-Type': 'application/json' }
   if (token) {
     headers.Authorization = `Bearer ${token}`
   }
 
-  const req = await fetch(fullURL, { methods, headers, body })
+  const req = await fetch(fullURL, { method, headers, body })
   const json = await req.json()
   return json
 }
@@ -41,6 +41,12 @@ export default () => {
     },
     login: async (email, password) => {
       let json = await request({ email, password }, 'post', '/auth/login')
+      return json
+    },
+    logout: async (email, password) => {
+      let token = localStorage.getItem('token')
+      let json = await request({ email, password }, 'post', '/auth/logout', {}, token)
+      localStorage.removeItem('token')
       return json
     },
   }

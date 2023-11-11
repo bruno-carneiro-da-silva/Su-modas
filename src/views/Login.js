@@ -1,6 +1,7 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import {
+  CAlert,
   CButton,
   CCard,
   CCardBody,
@@ -15,8 +16,32 @@ import {
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 import { cilLockLocked, cilUser } from '@coreui/icons'
+import useApi from '../services/api'
 
 const Login = () => {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [error, setError] = useState('')
+  const [loading, setLoading] = useState(false)
+  const api = useApi()
+  const history = useNavigate()
+
+  const handleSubmit = async () => {
+    if (email && password) {
+      setLoading(true)
+      const result = await api.login(email, password)
+      setLoading(false)
+      if (result.error === '') {
+        localStorage.setItem('token', result.token)
+        history('/')
+      } else {
+        setError(result.error)
+      }
+    } else {
+      alert('Preencha os campos!')
+    }
+  }
+
   return (
     <div className="bg-light min-vh-100 d-flex flex-row align-items-center">
       <CContainer>
@@ -28,11 +53,20 @@ const Login = () => {
                   <CForm>
                     <h1>Login</h1>
                     <p className="text-medium-emphasis">Faça login da sua conta</p>
+
+                    {error !== '' && <CAlert color="danger">{error}</CAlert>}
+
                     <CInputGroup className="mb-3">
                       <CInputGroupText>
                         <CIcon icon={cilUser} />
                       </CInputGroupText>
-                      <CFormInput placeholder="Usuário" autoComplete="username" />
+                      <CFormInput
+                        type="text"
+                        value={email}
+                        disabled={loading}
+                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder="Email"
+                      />
                     </CInputGroup>
                     <CInputGroup className="mb-4">
                       <CInputGroupText>
@@ -41,13 +75,20 @@ const Login = () => {
                       <CFormInput
                         type="password"
                         placeholder="Senha"
-                        autoComplete="current-password"
+                        value={password}
+                        disabled={loading}
+                        onChange={(e) => setPassword(e.target.value)}
                       />
                     </CInputGroup>
                     <CRow>
                       <CCol xs={6}>
-                        <CButton color="primary" className="px-4">
-                          Entrar
+                        <CButton
+                          onClick={handleSubmit}
+                          color="primary"
+                          disabled={loading}
+                          className="px-4"
+                        >
+                          {loading ? 'Carregando' : 'Entrar'}
                         </CButton>
                       </CCol>
                       <CCol xs={6} className="text-right">
