@@ -53,6 +53,7 @@ const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 
 const routes = [
   { path: '/login', exact: true, name: 'Login' },
+  { path: '/', exact: true, name: 'Página incial' },
   { path: '/dashboard', name: 'Balanço', element: Dashboard },
   { path: '/logout', name: 'Logout', element: Logout },
   { path: '/theme', name: 'Theme', element: Colors, exact: true },

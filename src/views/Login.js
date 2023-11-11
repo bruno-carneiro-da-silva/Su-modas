@@ -35,7 +35,7 @@ const Login = () => {
         localStorage.setItem('token', result.token)
         history('/')
       } else {
-        setError(result.error)
+        history('/login')
       }
     } else {
       alert('Preencha os campos!')
