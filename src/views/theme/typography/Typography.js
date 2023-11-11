@@ -21,14 +21,14 @@ const Typography = () => {
           <CCard>
             <CCardImage orientation="top" src={logo} />
             <CCardBody>
-              <CCardTitle>Card title</CCardTitle>
+              <CCardTitle>Biotipo</CCardTitle>
               <CCardText>
                 This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.
               </CCardText>
             </CCardBody>
             <CCardFooter>
-              <small className="text-medium-emphasis">Last updated 3 mins ago</small>
+              <small className="text-medium-emphasis">Última atualização a 40 min</small>
             </CCardFooter>
           </CCard>
         </CCol>
@@ -36,14 +36,14 @@ const Typography = () => {
           <CCard>
             <CCardImage orientation="top" src={logo} />
             <CCardBody>
-              <CCardTitle>Card title</CCardTitle>
+              <CCardTitle>TLF Jeans</CCardTitle>
               <CCardText>
                 This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.
               </CCardText>
             </CCardBody>
             <CCardFooter>
-              <small className="text-medium-emphasis">Last updated 3 mins ago</small>
+              <small className="text-medium-emphasis">Última atualização a 33 min</small>
             </CCardFooter>
           </CCard>
         </CCol>
@@ -51,14 +51,14 @@ const Typography = () => {
           <CCard>
             <CCardImage orientation="top" src={logo} />
             <CCardBody>
-              <CCardTitle>Card title</CCardTitle>
+              <CCardTitle>Pit Bull Jeans</CCardTitle>
               <CCardText>
                 This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.
               </CCardText>
             </CCardBody>
             <CCardFooter>
-              <small className="text-medium-emphasis">Last updated 3 mins ago</small>
+              <small className="text-medium-emphasis">Última atualização a 13 min</small>
             </CCardFooter>
           </CCard>
         </CCol>
@@ -66,14 +66,14 @@ const Typography = () => {
           <CCard>
             <CCardImage orientation="top" src={logo} />
             <CCardBody>
-              <CCardTitle>Card title</CCardTitle>
+              <CCardTitle>Bivik Jeans</CCardTitle>
               <CCardText>
                 This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.
               </CCardText>
             </CCardBody>
             <CCardFooter>
-              <small className="text-medium-emphasis">Last updated 3 mins ago</small>
+              <small className="text-medium-emphasis">Última atualização a 5 min</small>
             </CCardFooter>
           </CCard>
         </CCol>
@@ -81,14 +81,14 @@ const Typography = () => {
           <CCard>
             <CCardImage orientation="top" src={logo} />
             <CCardBody>
-              <CCardTitle>Card title</CCardTitle>
+              <CCardTitle>Brytch Jeans</CCardTitle>
               <CCardText>
                 This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.
               </CCardText>
             </CCardBody>
             <CCardFooter>
-              <small className="text-medium-emphasis">Last updated 3 mins ago</small>
+              <small className="text-medium-emphasis">Última atualização a 3 min</small>
             </CCardFooter>
           </CCard>
         </CCol>
@@ -96,14 +96,14 @@ const Typography = () => {
           <CCard>
             <CCardImage orientation="top" src={logo} />
             <CCardBody>
-              <CCardTitle>Card title</CCardTitle>
+              <CCardTitle>Denim Zero</CCardTitle>
               <CCardText>
                 This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.
               </CCardText>
             </CCardBody>
             <CCardFooter>
-              <small className="text-medium-emphasis">Last updated 3 mins ago</small>
+              <small className="text-medium-emphasis">Última atualização a 3 min</small>
             </CCardFooter>
           </CCard>
         </CCol>
