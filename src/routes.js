@@ -3,7 +3,7 @@ import React from 'react'
 const Dashboard = React.lazy(() => import('./views/Dashboard'))
 const Logout = React.lazy(() => import('./views/Logout'))
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
-const Typography = React.lazy(() => import('./views/theme/typography/Typography'))
+const Merchants = React.lazy(() => import('./views/theme/merchant/Merchants'))
 
 // Base
 const Accordion = React.lazy(() => import('./views/base/accordion/Accordion'))
@@ -52,13 +52,12 @@ const Toasts = React.lazy(() => import('./views/notifications/toasts/Toasts'))
 const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 
 const routes = [
-  { path: '/login', exact: true, name: 'Login' },
   { path: '/', exact: true, name: 'Página incial' },
   { path: '/dashboard', name: 'Balanço', element: Dashboard },
   { path: '/logout', name: 'Logout', element: Logout },
   { path: '/theme', name: 'Theme', element: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', element: Colors },
-  { path: '/theme/typography', name: 'Typography', element: Typography },
+  { path: '/merchant/merchants', name: 'Typography', element: Merchants },
   { path: '/base', name: 'Base', element: Cards, exact: true },
   { path: '/base/accordion', name: 'Accordion', element: Accordion },
   { path: '/base/breadcrumbs', name: 'Breadcrumbs', element: Breadcrumbs },

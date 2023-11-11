@@ -13,7 +13,7 @@ import {
 } from '@coreui/react'
 import { logo } from 'src/assets/brand/logo'
 
-const Typography = () => {
+const Merchants = () => {
   return (
     <>
       <CRow xs={{ cols: 1, gutter: 4 }} md={{ cols: 3 }}>
@@ -123,4 +123,4 @@ const Typography = () => {
   )
 }
 
-export default Typography
+export default Merchants
