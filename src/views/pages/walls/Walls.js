@@ -57,7 +57,7 @@ const Walls = () => {
       alert('Preencha os campos')
     }
   }
-
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const req = async () => {
     let json = await api.getwall()
     if (json.error === '') {
