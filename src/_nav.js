@@ -16,7 +16,7 @@ const _nav = [
   {
     component: CNavItem,
     name: 'Página inicial',
-    to: '/inicio',
+    to: '/',
     icon: <CIcon icon={cilHome} customClassName="nav-icon" />,
     badge: {
       color: 'info',
