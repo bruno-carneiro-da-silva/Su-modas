@@ -16,7 +16,7 @@ const _nav = [
   {
     component: CNavItem,
     name: 'Página inicial',
-    to: '/dashboard',
+    to: '/inicio',
     icon: <CIcon icon={cilHome} customClassName="nav-icon" />,
     badge: {
       color: 'info',
@@ -30,19 +30,19 @@ const _nav = [
   {
     component: CNavItem,
     name: 'Clientes',
-    to: '/theme/colors',
+    to: '/clientes',
     icon: <CIcon icon={cilStar} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
     name: 'Fornecedores',
-    to: '/merchant/merchants',
+    to: '/fornecedores',
     icon: <CIcon icon={cilUser} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
     name: 'Funcionários',
-    to: '/employees',
+    to: '/funcionarios',
     icon: <CIcon icon={cilGroup} customClassName="nav-icon" />,
   },
   {
@@ -51,8 +51,8 @@ const _nav = [
   },
   {
     component: CNavItem,
-    name: 'Fiscal',
-    to: '/balance',
+    name: 'Avisos',
+    to: '/avisos',
     icon: <CIcon icon={cilCalendar} customClassName="nav-icon" />,
   },
   {
@@ -319,6 +319,11 @@ const _nav = [
   //       name: 'Register',
   //       to: '/register',
   //     },
+  {
+    component: CNavItem,
+    name: 'Error 500',
+    to: '/500',
+  },
   //   ],
   // },
 ]

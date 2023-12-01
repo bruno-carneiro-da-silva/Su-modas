@@ -176,11 +176,11 @@ const tableExample = [
   },
 ]
 
-const Colors = () => {
+const Clients = () => {
   const ref = useRef(null)
   const [value, setValue] = useState('')
 
-  Colors.propTypes = {
+  Clients.propTypes = {
     onClick: PropTypes.func,
   }
 
@@ -195,7 +195,7 @@ const Colors = () => {
   return (
     <>
       <CCard className="mb-4">
-        <CCardHeader>Clientes</CCardHeader>
+        <CCardHeader>Clients</CCardHeader>
         <div className="d-grid gap-2 p-3 d-md-flex justify-content-md-end flex items-center ">
           <CInputGroup className=" w-50 items-center justify-start">
             <CFormInput
@@ -220,7 +220,7 @@ const Colors = () => {
           ))}
           <CButton size="sm" color="primary">
             {' '}
-            + Novos clientes
+            + Novos Clients
           </CButton>
         </div>
         <CCardBody>
@@ -273,4 +273,4 @@ const Colors = () => {
   )
 }
 
-export default Colors
+export default Clients

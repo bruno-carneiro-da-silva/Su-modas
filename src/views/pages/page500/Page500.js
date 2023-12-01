@@ -14,22 +14,21 @@ import { cilMagnifyingGlass } from '@coreui/icons'
 const Page500 = () => {
   return (
     <div className="bg-light min-vh-100 d-flex flex-row align-items-center">
-      <CContainer>
+      <CContainer className="bg-white rounded-5 p-5 w-60">
         <CRow className="justify-content-center">
           <CCol md={6}>
             <span className="clearfix">
-              <h1 className="float-start display-3 me-4">500</h1>
-              <h4 className="pt-3">Houston, we have a problem!</h4>
-              <p className="text-medium-emphasis float-start">
-                The page you are looking for is temporarily unavailable.
+              <h1 className="display-3 me-4 text-center">500</h1>
+              <h4 className="pt-3 text-center">Assinatura em andamento..</h4>
+              <p className="text-medium-emphasis text-center">
+                Nós da onbeef agradecemos sua preferência, estamos validando em nosso sistema sua
+                assinatura..
               </p>
             </span>
             <CInputGroup className="input-prepend">
-              <CInputGroupText>
-                <CIcon icon={cilMagnifyingGlass} />
-              </CInputGroupText>
-              <CFormInput type="text" placeholder="What are you looking for?" />
-              <CButton color="info">Search</CButton>
+              <CButton className="m-auto text-center" color="info w-50">
+                Sair
+              </CButton>
             </CInputGroup>
           </CCol>
         </CRow>
