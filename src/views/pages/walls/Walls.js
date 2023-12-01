@@ -58,29 +58,30 @@ const Walls = () => {
     }
   }
 
-  useEffect(() => {
-    const req = async () => {
-      let json = await api.getwall()
-      if (json.error === '') {
-        setList(
-          json.list.map((item, index) => ({
-            ...item,
-            actions: (
-              <CButtonGroup>
-                <CButton color="info" onClick={() => handleEditButton(index)}>
-                  Editar
-                </CButton>
-                <CButton color="danger">Excluir</CButton>
-              </CButtonGroup>
-            ),
-          })),
-        )
-      } else {
-        alert(json.error)
-      }
+  const req = async () => {
+    let json = await api.getwall()
+    if (json.error === '') {
+      setList(
+        json.list.map((item, index) => ({
+          ...item,
+          actions: (
+            <CButtonGroup>
+              <CButton color="info" onClick={() => handleEditButton(index)}>
+                Editar
+              </CButton>
+              <CButton color="danger">Excluir</CButton>
+            </CButtonGroup>
+          ),
+        })),
+      )
+    } else {
+      alert(json.error)
     }
+  }
+
+  useEffect(() => {
     req()
-  }, [])
+  }, [req])
 
   const fields = [
     { label: 'Titulo', key: 'title' },
