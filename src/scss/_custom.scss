@@ -1,1 +1,18 @@
 // Here you can add other styles
+.div-card-merchants
+{
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.title-header{
+  margin: auto;
+  align-items: center;
+  margin-bottom: 1rem;
+  justify-content: center;
+  text-align: center;
+  display: flexbox;
+}

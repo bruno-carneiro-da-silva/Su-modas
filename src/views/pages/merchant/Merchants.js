@@ -1,46 +1,45 @@
-import React from 'react'
+import * as icon from '@coreui/icons'
+import CIcon from '@coreui/icons-react'
 import {
+  CButton,
   CCard,
   CCardBody,
-  CRow,
-  CCol,
-  CCardImage,
-  CCardTitle,
-  CCardText,
   CCardFooter,
-  CPagination,
-  CPaginationItem,
+  CCardImage,
+  CCardText,
+  CCardTitle,
+  CCol,
+  CRow,
+  CTooltip,
 } from '@coreui/react'
-import { logo } from 'src/assets/brand/logo'
+import React from 'react'
+import logo from 'src/assets/images/react.jpg'
+import '../../../scss/_custom.scss'
 
 const Merchants = () => {
   return (
     <>
-      <CRow xs={{ cols: 1, gutter: 4 }} md={{ cols: 3 }}>
+      <CRow style={{ marginBottom: '1rem' }} xs={{ cols: 1, gutter: 4 }} md={{ cols: 3 }}>
         <CCol xs>
           <CCard>
             <CCardImage orientation="top" src={logo} />
             <CCardBody>
-              <CCardTitle>Biotipo</CCardTitle>
-              <CCardText>
-                This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.
-              </CCardText>
-            </CCardBody>
-            <CCardFooter>
-              <small className="text-medium-emphasis">Última atualização a 40 min</small>
-            </CCardFooter>
-          </CCard>
-        </CCol>
-        <CCol xs>
-          <CCard>
-            <CCardImage orientation="top" src={logo} />
-            <CCardBody>
-              <CCardTitle>TLF Jeans</CCardTitle>
-              <CCardText>
-                This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.
-              </CCardText>
+              <div className="title-header">
+                <CCardTitle>TLF Jeans</CCardTitle>
+                <CCardText>Moda masculina.</CCardText>
+              </div>
+              <div className="div-card-merchants">
+                <CTooltip content="beltrano@email.com" placement="top">
+                  <CButton shape="rounded-pill" color="primary">
+                    <CIcon icon={icon.cilEnvelopeClosed} size="sm"></CIcon>
+                  </CButton>
+                </CTooltip>
+                <CTooltip content="+55 11 99999-9999" placement="top">
+                  <CButton shape="rounded-pill" color="primary">
+                    <CIcon icon={icon.cilPhone} size="sm"></CIcon>
+                  </CButton>
+                </CTooltip>
+              </div>
             </CCardBody>
             <CCardFooter>
               <small className="text-medium-emphasis">Última atualização a 33 min</small>
@@ -51,11 +50,22 @@ const Merchants = () => {
           <CCard>
             <CCardImage orientation="top" src={logo} />
             <CCardBody>
-              <CCardTitle>Pit Bull Jeans</CCardTitle>
-              <CCardText>
-                This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.
-              </CCardText>
+              <div className="title-header">
+                <CCardTitle>Pit Bull Jeans</CCardTitle>
+                <CCardText>Calça masculina</CCardText>
+              </div>
+              <div className="div-card-merchants">
+                <CTooltip content="beltrano@email.com" placement="top">
+                  <CButton shape="rounded-pill" color="primary">
+                    <CIcon icon={icon.cilEnvelopeClosed} size="sm"></CIcon>
+                  </CButton>
+                </CTooltip>
+                <CTooltip content="+55 11 99999-9999" placement="top">
+                  <CButton shape="rounded-pill" color="primary">
+                    <CIcon icon={icon.cilPhone} size="sm"></CIcon>
+                  </CButton>
+                </CTooltip>
+              </div>
             </CCardBody>
             <CCardFooter>
               <small className="text-medium-emphasis">Última atualização a 13 min</small>
@@ -66,11 +76,22 @@ const Merchants = () => {
           <CCard>
             <CCardImage orientation="top" src={logo} />
             <CCardBody>
-              <CCardTitle>Bivik Jeans</CCardTitle>
-              <CCardText>
-                This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.
-              </CCardText>
+              <div className="title-header">
+                <CCardTitle>Bivik Jeans</CCardTitle>
+                <CCardText>Jeans</CCardText>
+              </div>
+              <div className="div-card-merchants">
+                <CTooltip content="beltrano@email.com" placement="top">
+                  <CButton shape="rounded-pill" color="primary">
+                    <CIcon icon={icon.cilEnvelopeClosed} size="sm"></CIcon>
+                  </CButton>
+                </CTooltip>
+                <CTooltip content="+55 11 99999-9999" placement="top">
+                  <CButton shape="rounded-pill" color="primary">
+                    <CIcon icon={icon.cilPhone} size="sm"></CIcon>
+                  </CButton>
+                </CTooltip>
+              </div>
             </CCardBody>
             <CCardFooter>
               <small className="text-medium-emphasis">Última atualização a 5 min</small>
@@ -81,11 +102,22 @@ const Merchants = () => {
           <CCard>
             <CCardImage orientation="top" src={logo} />
             <CCardBody>
-              <CCardTitle>Brytch Jeans</CCardTitle>
-              <CCardText>
-                This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.
-              </CCardText>
+              <div className="title-header">
+                <CCardTitle>Brytch Jeans</CCardTitle>
+                <CCardText>Roupas</CCardText>
+              </div>
+              <div className="div-card-merchants">
+                <CTooltip content="beltrano@email.com" placement="top">
+                  <CButton shape="rounded-pill" color="primary">
+                    <CIcon icon={icon.cilEnvelopeClosed} size="sm"></CIcon>
+                  </CButton>
+                </CTooltip>
+                <CTooltip content="+55 11 99999-9999" placement="top">
+                  <CButton shape="rounded-pill" color="primary">
+                    <CIcon icon={icon.cilPhone} size="sm"></CIcon>
+                  </CButton>
+                </CTooltip>
+              </div>
             </CCardBody>
             <CCardFooter>
               <small className="text-medium-emphasis">Última atualização a 3 min</small>
@@ -95,12 +127,23 @@ const Merchants = () => {
         <CCol xs>
           <CCard>
             <CCardImage orientation="top" src={logo} />
-            <CCardBody>
-              <CCardTitle>Denim Zero</CCardTitle>
-              <CCardText>
-                This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.
-              </CCardText>
+            <CCardBody orientation="center">
+              <div className="title-header">
+                <CCardTitle>Denim Zero</CCardTitle>
+                <CCardText>Conjuntos</CCardText>
+              </div>
+              <div className="div-card-merchants">
+                <CTooltip content="beltrano@email.com" placement="top">
+                  <CButton shape="rounded-pill" color="primary">
+                    <CIcon icon={icon.cilEnvelopeClosed} size="sm"></CIcon>
+                  </CButton>
+                </CTooltip>
+                <CTooltip content="+55 11 99999-9999" placement="top">
+                  <CButton shape="rounded-pill" color="primary">
+                    <CIcon icon={icon.cilPhone} size="sm"></CIcon>
+                  </CButton>
+                </CTooltip>
+              </div>
             </CCardBody>
             <CCardFooter>
               <small className="text-medium-emphasis">Última atualização a 3 min</small>
@@ -108,17 +151,6 @@ const Merchants = () => {
           </CCard>
         </CCol>
       </CRow>
-      <CPagination aria-label="Page navigation example">
-        <CPaginationItem aria-label="Previous" disabled>
-          <span aria-hidden="true">&laquo;</span>
-        </CPaginationItem>
-        <CPaginationItem active>1</CPaginationItem>
-        <CPaginationItem>2</CPaginationItem>
-        <CPaginationItem>3</CPaginationItem>
-        <CPaginationItem aria-label="Next">
-          <span aria-hidden="true">&raquo;</span>
-        </CPaginationItem>
-      </CPagination>
     </>
   )
 }
