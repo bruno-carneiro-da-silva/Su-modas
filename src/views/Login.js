@@ -105,9 +105,11 @@ const Login = () => {
                 <CCardBody className="text-center">
                   <div>
                     <h2>Cadastrar</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua.
+                    <p className="text-center">
+                      Somos uma empresa dedicada à moda contemporânea, oferecendo uma ampla gama de
+                      roupas que refletem estilo, qualidade e versatilidade. Nossa missão é inspirar
+                      a confiança e a expressão pessoal de nossos clientes, proporcionando peças que
+                      combinam conforto e elegância em cada detalhe.
                     </p>
                     <Link to="/register">
                       <CButton color="primary" className="mt-3" active tabIndex={-1}>

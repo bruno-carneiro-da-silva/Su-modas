@@ -1,4 +1,5 @@
 import React from 'react'
+import Sells from './views/pages/sells'
 
 const Dashboard = React.lazy(() => import('./views/Dashboard'))
 const Logout = React.lazy(() => import('./views/Logout'))
@@ -61,6 +62,7 @@ const routes = [
   { path: '/fornecedores', name: 'merchants', element: Merchants },
   { path: '/funcionarios', name: 'employees', element: Employees },
   { path: '/avisos', name: 'Avisos', element: Walls },
+  { path: '/vendas', name: 'Vendas', element: Sells },
 
   // { path: '/theme', name: 'Theme', element: Clients, exact: true },
   // { path: '/500', name: '500', element: ServerError },
