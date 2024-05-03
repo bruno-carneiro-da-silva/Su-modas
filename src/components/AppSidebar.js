@@ -6,6 +6,7 @@ import { CSidebar, CSidebarNav, CSidebarToggler } from '@coreui/react'
 import { AppSidebarNav } from './AppSidebarNav'
 
 import SimpleBar from 'simplebar-react'
+import '../scss/_variables.scss'
 import 'simplebar/dist/simplebar.min.css'
 
 // sidebar nav config
@@ -25,13 +26,13 @@ const AppSidebar = () => {
         dispatch({ type: 'set', sidebarShow: visible })
       }}
     >
-      <CSidebarNav>
+      <CSidebarNav className="indigo-background">
         <SimpleBar>
           <AppSidebarNav items={navigation} />
         </SimpleBar>
       </CSidebarNav>
       <CSidebarToggler
-        className="d-none d-lg-flex"
+        className="d-none d-lg-flex indigo-background"
         onClick={() => dispatch({ type: 'set', sidebarUnfoldable: !unfoldable })}
       />
     </CSidebar>

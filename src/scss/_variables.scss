@@ -45,7 +45,10 @@
 
 // scss-docs-start color-variables
 // $blue:    #0d6efd !default;
-// $indigo:  #6610f2 !default;
+ $indigo:  #4d44b5 !default;
+ .indigo-background {
+  background-color: $indigo;
+}
 // $purple:  #6f42c1 !default;
 // $pink:    #d63384 !default;
 // $red:     #dc3545 !default;
