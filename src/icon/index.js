@@ -4,10 +4,10 @@ import PropTypes from 'prop-types'
 const StarIcon = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    fill="none"
+    fill="#fcc43e"
     viewBox="0 0 24 24"
     strokeWidth="1.5"
-    stroke="currentColor"
+    stroke="#fcc43e"
     className={className}
     height="1.5em"
     width="1.5em"
@@ -20,7 +20,43 @@ const StarIcon = ({ className }) => (
   </svg>
 )
 
+const ChartIcon = ({ className }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="#4d44b5"
+    className={className}
+    height="3.5em"
+    width="3.5em"
+  >
+    <path d="M18.375 2.25c-1.035 0-1.875.84-1.875 1.875v15.75c0 1.035.84 1.875 1.875 1.875h.75c1.035 0 1.875-.84 1.875-1.875V4.125c0-1.036-.84-1.875-1.875-1.875h-.75ZM9.75 8.625c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-.75a1.875 1.875 0 0 1-1.875-1.875V8.625ZM3 13.125c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v6.75c0 1.035-.84 1.875-1.875 1.875h-.75A1.875 1.875 0 0 1 3 19.875v-6.75Z" />
+  </svg>
+)
+
+const ArrowIcon = ({ className }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="#4d44b5"
+    className={className}
+    height="3.5em"
+    width="3.5em"
+  >
+    <path
+      fillRule="evenodd"
+      d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+      clipRule="evenodd"
+    />
+  </svg>
+)
+
 StarIcon.propTypes = {
   className: PropTypes.string.isRequired,
 }
-export { StarIcon }
+ChartIcon.propTypes = {
+  className: PropTypes.string.isRequired,
+}
+ArrowIcon.propTypes = {
+  className: PropTypes.string.isRequired,
+}
+export { StarIcon, ChartIcon, ArrowIcon }

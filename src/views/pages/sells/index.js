@@ -10,13 +10,13 @@ const Sells = () => {
         <nav className="d-flex">
           <ul className="menu-list">
             <li className="active">
-              <a href="/sells">Todas</a>
+              <a href="/vendas">Todas</a>
             </li>
             <li>
-              <a href="/sells">Femininos</a>
+              <a href="/vendas">Femininos</a>
             </li>
             <li>
-              <a href="/sells">Masculinos</a>
+              <a href="/vendas">Masculinos</a>
             </li>
           </ul>
         </nav>

@@ -63,8 +63,8 @@ const WidgetsBrand = ({ withCharts }) => {
           })}
           icon={<CIcon icon={cibFacebook} height={52} className="my-4 text-white" />}
           values={[
-            { title: 'friends', value: '89K' },
-            { title: 'feeds', value: '459' },
+            { title: 'Amigos', value: '89K' },
+            { title: 'Perfis', value: '459' },
           ]}
           style={{
             '--cui-card-cap-bg': '#3b5998',
@@ -99,7 +99,7 @@ const WidgetsBrand = ({ withCharts }) => {
           })}
           icon={<CIcon icon={cibTwitter} height={52} className="my-4 text-white" />}
           values={[
-            { title: 'followers', value: '973k' },
+            { title: 'Seguidores', value: '973k' },
             { title: 'tweets', value: '1.792' },
           ]}
           style={{
@@ -135,8 +135,8 @@ const WidgetsBrand = ({ withCharts }) => {
           })}
           icon={<CIcon icon={cibLinkedin} height={52} className="my-4 text-white" />}
           values={[
-            { title: 'contacts', value: '500' },
-            { title: 'feeds', value: '1.292' },
+            { title: 'Contatos', value: '500' },
+            { title: 'Perfis', value: '1.292' },
           ]}
           style={{
             '--cui-card-cap-bg': '#4875b4',
@@ -172,8 +172,8 @@ const WidgetsBrand = ({ withCharts }) => {
           })}
           icon={<CIcon icon={cilCalendar} height={52} className="my-4 text-white" />}
           values={[
-            { title: 'events', value: '12+' },
-            { title: 'meetings', value: '4' },
+            { title: 'Eventos', value: '12+' },
+            { title: 'Reuniões', value: '4' },
           ]}
         />
       </CCol>
