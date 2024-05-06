@@ -15,7 +15,7 @@ export const sellsMock = [
     id: 2,
     product: 'Camiseta',
     customer: 'Maria',
-    tag: 'jeans',
+    tag: 'feminino',
     price: 'R$ 100,00',
     rating: 5.6,
     totalSells: 1000,

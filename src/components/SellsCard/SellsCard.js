@@ -111,7 +111,7 @@ const SellsCard = () => {
               <ProductDetails
                 source="https://via.placeholder.com/150"
                 title="Nome do produto"
-                tag="Masculino"
+                tag="Feminino"
                 paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, lorem nec mollis ultricies, felis nunc tincidunt odio, vel ultricies erat leo sit amet dolor. Nullam nec nisl sit amet purus lacinia tincidunt. Sed nec nunc nec turpis ultrices lacinia. Sed nec nunc nec turpis ultrices lacinia."
               />
             </CModalBody>

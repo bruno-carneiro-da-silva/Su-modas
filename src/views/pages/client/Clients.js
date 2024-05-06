@@ -195,7 +195,7 @@ const Clients = () => {
   return (
     <>
       <CCard className="mb-4">
-        <CCardHeader>Clients</CCardHeader>
+        <CCardHeader>Clientes</CCardHeader>
         <div className="d-grid gap-2 p-3 d-md-flex justify-content-md-end flex items-center ">
           <CInputGroup className=" w-50 items-center justify-start">
             <CFormInput
@@ -220,7 +220,7 @@ const Clients = () => {
           ))}
           <CButton size="sm" color="primary">
             {' '}
-            + Novos Clients
+            + Novos Clientes
           </CButton>
         </div>
         <CCardBody>

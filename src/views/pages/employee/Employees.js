@@ -12,7 +12,7 @@ const Employees = () => {
     <>
       <CCard className="mb-3" style={{ width: '100%', borderRadius: '8px' }}>
         <CRow className="g-0 p-3">
-          <CCol md={2} className="g-0 p-3">
+          <CCol md={6} className="g-0 p-3">
             <CCardImage
               style={{
                 borderRadius: '50%',
@@ -54,7 +54,9 @@ const Employees = () => {
             </CCardText>
             <div>
               <CIcon icon={icon.cilLocationPin} size="sm" />
-              <span style={{ marginLeft: '3px' }}>São Paulo, Brasil</span>
+              <span style={{ marginLeft: '3px' }}>
+                Rua soldado percilio neto, 239 - São Paulo, Brasil
+              </span>
             </div>
           </CCol>
           <CCol
@@ -225,7 +227,7 @@ const Employees = () => {
               >
                 Kamila silva
               </h6>
-              <p style={{ margin: '0' }}>teste</p>
+              <span style={{ margin: '0' }}>teste</span>
             </CCardText>
           </div>
           <CButton
@@ -282,7 +284,7 @@ const Employees = () => {
               >
                 Kamila silva
               </h6>
-              <p style={{ margin: '0' }}>teste</p>
+              <span style={{ margin: '0' }}>teste</span>
             </CCardText>
           </div>
           <CButton
@@ -336,7 +338,7 @@ const Employees = () => {
               >
                 Kamila silva
               </h6>
-              <p style={{ margin: '0' }}>teste</p>
+              <span style={{ margin: '0' }}>teste</span>
             </CCardText>
           </div>
           <CButton
@@ -393,7 +395,7 @@ const Employees = () => {
               >
                 Kamila silva
               </h6>
-              <p style={{ margin: '0' }}>teste</p>
+              <span style={{ margin: '0' }}>teste</span>
             </CCardText>
           </div>
           <CButton
