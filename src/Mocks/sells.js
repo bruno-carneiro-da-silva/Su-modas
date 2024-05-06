@@ -7,8 +7,9 @@ export const sellsMock = [
     price: 'R$ 50,00',
     rating: 4.5,
     totalSells: 1000,
-    interestings: '25%',
+    interestings: '100%',
     progressBar: 25,
+    image: 'https://via.placeholder.com/150',
   },
   {
     id: 2,
@@ -17,9 +18,10 @@ export const sellsMock = [
     tag: 'jeans',
     price: 'R$ 100,00',
     rating: 5.6,
-    totalSells: 1450,
-    interestings: '50%',
+    totalSells: 1000,
+    interestings: '100%',
     progressBar: 50,
+    image: 'https://via.placeholder.com/150',
   },
   {
     id: 3,
@@ -29,7 +31,8 @@ export const sellsMock = [
     price: 'R$ 50,00',
     rating: 4.5,
     totalSells: 1000,
-    interestings: '40%',
+    interestings: '100%',
     progressBar: 40,
+    image: 'https://via.placeholder.com/150',
   },
 ]

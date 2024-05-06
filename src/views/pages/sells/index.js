@@ -1,6 +1,6 @@
 import React from 'react'
-import '../../../scss/sells.scss'
-import SellsCard from '../../../components/SellsCard/SellsCard'
+import 'src/scss/sells.scss'
+import SellsCard from 'src/components/SellsCard/SellsCard'
 
 const Sells = () => {
   return (
