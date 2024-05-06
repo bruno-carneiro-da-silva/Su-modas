@@ -30,16 +30,16 @@ const AppHeader = () => {
         </CHeaderToggler>
         <CHeaderNav className="d-none d-md-flex me-auto">
           <CNavItem>
-            <CNavLink to="/dashboard" component={NavLink}>
+            <CNavLink to="/" component={NavLink}>
               Página inicial
             </CNavLink>
           </CNavItem>
-          <CNavItem>
+          {/* <CNavItem>
             <CNavLink href="/merchant/merchants">fornecedores</CNavLink>
           </CNavItem>
           <CNavItem>
             <CNavLink href="/profile">meu perfil</CNavLink>
-          </CNavItem>
+          </CNavItem> */}
         </CHeaderNav>
         <CHeaderNav>
           <CNavItem>
