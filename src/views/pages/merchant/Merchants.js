@@ -39,6 +39,11 @@ const Merchants = () => {
                     <CIcon icon={icon.cilPhone} size="sm"></CIcon>
                   </CButton>
                 </CTooltip>
+                <CTooltip content="Rua soldado percilio neto, 239 - Monte Mor, SP" placement="top">
+                  <CButton shape="rounded-pill" color="primary">
+                    <CIcon icon={icon.cilAddressBook} size="sm"></CIcon>
+                  </CButton>
+                </CTooltip>
               </div>
             </CCardBody>
             <CCardFooter>
@@ -63,6 +68,11 @@ const Merchants = () => {
                 <CTooltip content="+55 11 99999-9999" placement="top">
                   <CButton shape="rounded-pill" color="primary">
                     <CIcon icon={icon.cilPhone} size="sm"></CIcon>
+                  </CButton>
+                </CTooltip>
+                <CTooltip content="Rua travessa francisco pinto, 456 - Vinhedo, SP" placement="top">
+                  <CButton shape="rounded-pill" color="primary">
+                    <CIcon icon={icon.cilAddressBook} size="sm"></CIcon>
                   </CButton>
                 </CTooltip>
               </div>
@@ -91,6 +101,14 @@ const Merchants = () => {
                     <CIcon icon={icon.cilPhone} size="sm"></CIcon>
                   </CButton>
                 </CTooltip>
+                <CTooltip
+                  content="Rua travessa augusto borborema, 567 - Campinas, SP"
+                  placement="top"
+                >
+                  <CButton shape="rounded-pill" color="primary">
+                    <CIcon icon={icon.cilAddressBook} size="sm"></CIcon>
+                  </CButton>
+                </CTooltip>
               </div>
             </CCardBody>
             <CCardFooter>
@@ -117,6 +135,11 @@ const Merchants = () => {
                     <CIcon icon={icon.cilPhone} size="sm"></CIcon>
                   </CButton>
                 </CTooltip>
+                <CTooltip content="Rua padre Antônio vieira, 133 - Campinas, SP" placement="top">
+                  <CButton shape="rounded-pill" color="primary">
+                    <CIcon icon={icon.cilAddressBook} size="sm"></CIcon>
+                  </CButton>
+                </CTooltip>
               </div>
             </CCardBody>
             <CCardFooter>
@@ -124,7 +147,7 @@ const Merchants = () => {
             </CCardFooter>
           </CCard>
         </CCol>
-        <CCol xs>
+        <CCol xs className="mb-4">
           <CCard>
             <CCardImage orientation="top" src={logo} />
             <CCardBody orientation="center">
@@ -141,6 +164,14 @@ const Merchants = () => {
                 <CTooltip content="+55 11 99999-9999" placement="top">
                   <CButton shape="rounded-pill" color="primary">
                     <CIcon icon={icon.cilPhone} size="sm"></CIcon>
+                  </CButton>
+                </CTooltip>
+                <CTooltip
+                  content="Rua travessa augusto borborema, 632 - Hortolândia, SP"
+                  placement="top"
+                >
+                  <CButton shape="rounded-pill" color="primary">
+                    <CIcon icon={icon.cilAddressBook} size="sm"></CIcon>
                   </CButton>
                 </CTooltip>
               </div>
