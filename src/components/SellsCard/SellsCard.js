@@ -16,11 +16,27 @@ import {
   CModalBody,
 } from '@coreui/react'
 import 'src/scss/sells.scss'
+import Swal from 'sweetalert2'
 ChartJS.register(DoughnutController, ArcElement)
 
 const SellsCard = () => {
   const [visibleXL, setVisibleXL] = useState(false)
 
+  const handleDeleteSell = () => {
+    Swal.fire({
+      title: 'Você tem certeza?',
+      text: 'Você não poderá reverter isso!',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Sim, excluir!',
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire('Excluído!', 'Seu produto foi excluído.', 'success')
+      }
+    })
+  }
   return (
     <>
       {sellsMock.map((sell, index) => (
@@ -71,7 +87,9 @@ const SellsCard = () => {
                     ...
                   </CDropdownToggle>
                   <CDropdownMenu>
-                    <CDropdownItem as="button">Excluir</CDropdownItem>
+                    <CDropdownItem as="button" onClick={handleDeleteSell}>
+                      Excluir
+                    </CDropdownItem>
                     <CDropdownItem as="button">Editar</CDropdownItem>
                   </CDropdownMenu>
                 </CDropdown>
