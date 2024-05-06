@@ -34,12 +34,6 @@ const AppHeader = () => {
               Página inicial
             </CNavLink>
           </CNavItem>
-          {/* <CNavItem>
-            <CNavLink href="/merchant/merchants">fornecedores</CNavLink>
-          </CNavItem>
-          <CNavItem>
-            <CNavLink href="/profile">meu perfil</CNavLink>
-          </CNavItem> */}
         </CHeaderNav>
         <CHeaderNav>
           <CNavItem>
