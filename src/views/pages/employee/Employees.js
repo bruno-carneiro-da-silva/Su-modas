@@ -1,11 +1,12 @@
 import React from 'react'
 import { CCard, CRow, CCol, CCardImage, CCardText, CButton, CFormInput } from '@coreui/react'
-import avatar from 'src/assets/images/avatars/1.jpg'
+import avatar from 'src/assets/images/avatars/8.jpg'
 import avatar2 from 'src/assets/images/avatars/2.jpg'
 import avatar3 from 'src/assets/images/avatars/3.jpg'
 import avatar4 from 'src/assets/images/avatars/4.jpg'
 import CIcon from '@coreui/icons-react'
 import * as icon from '@coreui/icons'
+import 'src/scss/_custom.scss'
 
 const Employees = () => {
   return (
@@ -13,45 +14,9 @@ const Employees = () => {
       <CCard className="mb-3" style={{ width: '100%', borderRadius: '8px' }}>
         <CRow className="g-0 p-3">
           <CCol md={6} className="g-0 p-3">
-            <CCardImage
-              style={{
-                borderRadius: '50%',
-                border: '1px solid #e4e7eb',
-                padding: '10px',
-                height: '160px',
-                width: '160px',
-              }}
-              src={avatar}
-            />
-            <CCardText>
-              <h3
-                style={{
-                  marginLeft: '3px',
-                  color: '#303972',
-                  display: 'flex',
-                  alignItems: 'center',
-                  textAlign: 'center',
-                  justifyContent: 'start',
-                }}
-              >
-                Kamila silva
-              </h3>
-            </CCardText>
-            <CCardText>
-              <h6
-                style={{
-                  marginLeft: '3px',
-                  color: '#303972',
-                  display: 'flex',
-                  fontWeight: 'bold',
-                  alignItems: 'center',
-                  textAlign: 'center',
-                  justifyContent: 'start',
-                }}
-              >
-                Admin
-              </h6>
-            </CCardText>
+            <CCardImage className="employee-avatar" src={avatar} />
+            <CCardText className="employee-name">Kamila silva</CCardText>
+            <CCardText className="employee-role">Admin</CCardText>
             <div>
               <CIcon icon={icon.cilLocationPin} size="sm" />
               <span style={{ marginLeft: '3px' }}>
@@ -195,38 +160,10 @@ const Employees = () => {
             margin: '15px',
           }}
         >
-          <div
-            style={{
-              alignItems: 'center',
-              justifyContent: 'start',
-              margin: '3px',
-              display: 'flex',
-              width: '100%',
-            }}
-          >
-            <CCardImage
-              style={{
-                borderRadius: '50%',
-                padding: '10px',
-                height: '70px',
-                width: '70px',
-              }}
-              src={avatar2}
-            />
-            <CCardText>
-              <h6
-                style={{
-                  margin: '0',
-                  color: '#303972',
-                  display: 'flex',
-                  fontWeight: 'bold',
-                  alignItems: 'center',
-                  textAlign: 'center',
-                  justifyContent: 'start',
-                }}
-              >
-                Kamila silva
-              </h6>
+          <div className="contact-card">
+            <CCardImage className="employee-contact-avatar" src={avatar2} />
+            <CCardText className="person-contact">
+              Kamila silva
               <span style={{ margin: '0' }}>teste</span>
             </CCardText>
           </div>
@@ -252,38 +189,10 @@ const Employees = () => {
             margin: '15px',
           }}
         >
-          <div
-            style={{
-              alignItems: 'center',
-              justifyContent: 'start',
-              margin: '3px',
-              display: 'flex',
-              width: '100%',
-            }}
-          >
-            <CCardImage
-              style={{
-                borderRadius: '50%',
-                padding: '10px',
-                height: '70px',
-                width: '70px',
-              }}
-              src={avatar3}
-            />
-            <CCardText>
-              <h6
-                style={{
-                  margin: '0',
-                  color: '#303972',
-                  display: 'flex',
-                  fontWeight: 'bold',
-                  alignItems: 'center',
-                  textAlign: 'center',
-                  justifyContent: 'start',
-                }}
-              >
-                Kamila silva
-              </h6>
+          <div className="contact-card">
+            <CCardImage className="employee-contact-avatar" src={avatar3} />
+            <CCardText className="person-contact">
+              Kamila silva
               <span style={{ margin: '0' }}>teste</span>
             </CCardText>
           </div>
@@ -306,38 +215,10 @@ const Employees = () => {
             margin: '15px',
           }}
         >
-          <div
-            style={{
-              alignItems: 'center',
-              justifyContent: 'start',
-              margin: '3px',
-              display: 'flex',
-              width: '100%',
-            }}
-          >
-            <CCardImage
-              style={{
-                borderRadius: '50%',
-                padding: '10px',
-                height: '70px',
-                width: '70px',
-              }}
-              src={avatar4}
-            />
-            <CCardText>
-              <h6
-                style={{
-                  margin: '0',
-                  color: '#303972',
-                  display: 'flex',
-                  fontWeight: 'bold',
-                  alignItems: 'center',
-                  textAlign: 'center',
-                  justifyContent: 'start',
-                }}
-              >
-                Kamila silva
-              </h6>
+          <div className="contact-card">
+            <CCardImage className="employee-contact-avatar" src={avatar4} />
+            <CCardText className="person-contact">
+              Kamila silva
               <span style={{ margin: '0' }}>teste</span>
             </CCardText>
           </div>
@@ -363,80 +244,19 @@ const Employees = () => {
             margin: '15px',
           }}
         >
-          <div
-            style={{
-              alignItems: 'center',
-              justifyContent: 'start',
-              margin: '3px',
-              display: 'flex',
-              width: '100%',
-            }}
-          >
-            <CCardImage
-              style={{
-                borderRadius: '50%',
-                padding: '10px',
-                height: '70px',
-                width: '70px',
-              }}
-              src={avatar}
-            />
-            <CCardText>
-              <h6
-                style={{
-                  margin: '0',
-                  color: '#303972',
-                  display: 'flex',
-                  fontWeight: 'bold',
-                  alignItems: 'center',
-                  textAlign: 'center',
-                  justifyContent: 'start',
-                }}
-              >
-                Kamila silva
-              </h6>
+          <div className="contact-card">
+            <CCardImage className="employee-contact-avatar" src={avatar} />
+            <CCardText className="person-contact">
+              Kamila silva
               <span style={{ margin: '0' }}>teste</span>
             </CCardText>
           </div>
-          <CButton
-            style={{
-              borderRadius: '50%',
-              backgroundColor: '#fff',
-              color: '#303972',
-              padding: '12px',
-              height: '50px',
-              border: '1px solid #303972',
-              width: '50px',
-            }}
-          >
+          <CButton className="contact-icon-button">
             <CIcon icon={icon.cilEnvelopeClosed} size="lg" />
           </CButton>
         </CCol>
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            margin: 'auto',
-            width: '100%',
-          }}
-        >
-          <CButton
-            style={{
-              borderRadius: '20px',
-              padding: '10px',
-              marginBottom: '25px',
-              border: 'none',
-              display: 'flex',
-              width: '91%',
-              alignItems: 'center',
-              justifyContent: 'center',
-              backgroundColor: '#F5F2F9',
-              color: '#303972',
-            }}
-          >
-            Ver mais
-          </CButton>
+        <div className="btn-contact-container">
+          <CButton className="btn-contact">Ver mais</CButton>
         </div>
       </CCard>
     </>

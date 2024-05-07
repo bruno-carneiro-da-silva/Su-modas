@@ -17,6 +17,7 @@ import {
 } from '@coreui/react'
 import 'src/scss/_custom.scss'
 import { merchants } from 'src/Mocks/merchants'
+import avatar from 'src/assets/images/avatars/1.jpg'
 import MerchantDetails from 'src/components/MechantDetails/MerchantDetails'
 
 const Merchants = () => {
@@ -62,15 +63,15 @@ const Merchants = () => {
       {visibleXL && (
         <>
           <CModal
-            size="xl"
+            size="lg"
             visible={visibleXL}
             onClose={() => setVisibleXL(false)}
             aria-labelledby="OptionalSizesExample1"
           >
             <CModalBody>
               <MerchantDetails
-                image="https://via.placeholder.com/150"
-                name="Nome do produto"
+                image={avatar}
+                name="Fulano de tal"
                 type="Feminino"
                 address="Rua travessa augusto borborema, 567 - Campinas, SP"
                 phone="+55 11 99999-9999"
