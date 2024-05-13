@@ -10,9 +10,12 @@ Tech stack:
 - axios
 
 
-### Lembre se de colocar a porta no arquivo `.env` caso queira mudar
+embre se de colocar a porta no arquivo `.env` caso queira mudar
 
 # Introdução
+
+
+### ![Captura de tela 2024-05-13 124401](https://github.com/bruno-carneiro-da-silva/Su-modas/assets/49591443/3f140396-efc1-4037-bda3-816b2f7b57c8)
 
 - O projeto Su modas é um projeto para desenvolvimento de um dashboard para a empresa Su modas, no qual, faz gerenciamento de vendas de roupas jeans controle de estoque.<br><br>
 ![AmazonDynamoDB](https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=for-the-badge&logo=Amazon%20DynamoDB&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Context-API](https://img.shields.io/badge/Context--Api-000000?style=for-the-badge&logo=react) 
