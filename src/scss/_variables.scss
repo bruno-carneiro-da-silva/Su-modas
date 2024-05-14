@@ -49,6 +49,23 @@
  .indigo-background {
   background-color: $indigo;
 }
+
+/* Add this to your CSS file */
+.thin-scrollbar::-webkit-scrollbar {
+  width: 3px;
+}
+
+.thin-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background: #a4a4a4;
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 // $purple:  #6f42c1 !default;
 // $pink:    #d63384 !default;
 // $red:     #dc3545 !default;

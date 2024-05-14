@@ -17,7 +17,7 @@ export const sellsMock = [
     customer: 'Maria',
     tag: 'feminino',
     price: 'R$ 100,00',
-    rating: 5.6,
+    rating: 4.8,
     totalSells: 1000,
     interestings: '100%',
     progressBar: 50,

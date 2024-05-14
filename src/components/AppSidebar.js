@@ -1,13 +1,14 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 
-import { CSidebar, CSidebarNav, CSidebarToggler } from '@coreui/react'
+import { CImage, CSidebar, CSidebarNav } from '@coreui/react'
 
 import { AppSidebarNav } from './AppSidebarNav'
 
 import SimpleBar from 'simplebar-react'
 import '../scss/_variables.scss'
 import 'simplebar/dist/simplebar.min.css'
+import logo from '../assets/images/sumodas-branco.png'
 
 // sidebar nav config
 import navigation from '../_nav'
@@ -26,15 +27,12 @@ const AppSidebar = () => {
         dispatch({ type: 'set', sidebarShow: visible })
       }}
     >
-      <CSidebarNav className="indigo-background">
+      <CImage src={logo} className="indigo-background p-3" width="100%" height={180} />
+      <CSidebarNav className="indigo-background thin-scrollbar">
         <SimpleBar>
           <AppSidebarNav items={navigation} />
         </SimpleBar>
       </CSidebarNav>
-      <CSidebarToggler
-        className="d-none d-lg-flex indigo-background"
-        onClick={() => dispatch({ type: 'set', sidebarUnfoldable: !unfoldable })}
-      />
     </CSidebar>
   )
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import * as icon from '@coreui/icons'
 import CIcon from '@coreui/icons-react'
 import {
@@ -13,6 +13,7 @@ import {
   CModal,
   CModalBody,
   CRow,
+  CSpinner,
   CTooltip,
 } from '@coreui/react'
 import 'src/scss/_custom.scss'
@@ -22,39 +23,62 @@ import MerchantDetails from 'src/components/MechantDetails/MerchantDetails'
 
 const Merchants = () => {
   const [visibleXL, setVisibleXL] = useState(false)
+  const [loading, setLoading] = useState(true)
+
+  //just testing the loading
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false)
+    }, 30000)
+
+    return () => clearTimeout(timer)
+  }, [])
+
   return (
     <>
       <CRow xs={{ cols: 1, gutter: 4 }} md={{ cols: 3 }}>
         {merchants.map((merchant) => (
           <CCol xs key={merchant.id} className="mb-4">
             <CCard className="merchant-card" onClick={() => setVisibleXL(!visibleXL)}>
-              <CCardImage className="merchant-image" orientation="top" src={merchant.logo} />
-              <CCardBody>
-                <div className="title-header">
-                  <CCardTitle>{merchant.name}</CCardTitle>
-                  <CCardText>{merchant.description}</CCardText>
+              {loading ? (
+                <div className="spinner-container">
+                  <CSpinner
+                    className="text-center d-flex justify-content-center m-auto p-4"
+                    size="sm"
+                    style={{ width: '3rem', height: '3rem' }}
+                  />
                 </div>
-                <div className="div-card-merchants">
-                  <CTooltip content={merchant.email} placement="top">
-                    <CButton shape="rounded-pill" color="primary">
-                      <CIcon icon={icon.cilEnvelopeClosed} size="sm"></CIcon>
-                    </CButton>
-                  </CTooltip>
-                  <CTooltip content={merchant.phone} placement="top">
-                    <CButton shape="rounded-pill" color="primary">
-                      <CIcon icon={icon.cilPhone} size="sm"></CIcon>
-                    </CButton>
-                  </CTooltip>
-                  <CTooltip content={merchant.address} placement="top">
-                    <CButton shape="rounded-pill" color="primary">
-                      <CIcon icon={icon.cilAddressBook} size="sm"></CIcon>
-                    </CButton>
-                  </CTooltip>
-                </div>
-              </CCardBody>
-              <CCardFooter>
-                <small className="text-medium-emphasis">{merchant.activity}</small>
-              </CCardFooter>
+              ) : (
+                <>
+                  <CCardImage className="merchant-image" orientation="top" src={merchant.logo} />
+                  <CCardBody>
+                    <div className="title-header">
+                      <CCardTitle>{merchant.name}</CCardTitle>
+                      <CCardText>{merchant.description}</CCardText>
+                    </div>
+                    <div className="div-card-merchants">
+                      <CTooltip content={merchant.email} placement="top">
+                        <CButton shape="rounded-pill" color="primary">
+                          <CIcon icon={icon.cilEnvelopeClosed} size="sm"></CIcon>
+                        </CButton>
+                      </CTooltip>
+                      <CTooltip content={merchant.phone} placement="top">
+                        <CButton shape="rounded-pill" color="primary">
+                          <CIcon icon={icon.cilPhone} size="sm"></CIcon>
+                        </CButton>
+                      </CTooltip>
+                      <CTooltip content={merchant.address} placement="top">
+                        <CButton shape="rounded-pill" color="primary">
+                          <CIcon icon={icon.cilAddressBook} size="sm"></CIcon>
+                        </CButton>
+                      </CTooltip>
+                    </div>
+                  </CCardBody>
+                  <CCardFooter>
+                    <small className="text-medium-emphasis">{merchant.activity}</small>
+                  </CCardFooter>
+                </>
+              )}
             </CCard>
           </CCol>
         ))}

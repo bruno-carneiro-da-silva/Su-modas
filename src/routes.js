@@ -7,6 +7,7 @@ const Clients = React.lazy(() => import('./views/pages/client/Clients'))
 const Merchants = React.lazy(() => import('./views/pages/merchant/Merchants'))
 const Employees = React.lazy(() => import('./views/pages/employee/Employees'))
 const Walls = React.lazy(() => import('./views/pages/walls/Walls'))
+const Profile = React.lazy(() => import('./views/pages/profile/Profile'))
 
 // Base
 // const ServerError = React.lazy(() => import('./views/pages/page500/Page500'))
@@ -63,6 +64,7 @@ const routes = [
   { path: '/funcionarios', name: 'employees', element: Employees },
   { path: '/avisos', name: 'Avisos', element: Walls },
   { path: '/vendas', name: 'Vendas', element: Sells },
+  { path: '/perfil', name: 'Perfil', element: Profile },
 
   // { path: '/theme', name: 'Theme', element: Clients, exact: true },
   // { path: '/500', name: '500', element: ServerError },

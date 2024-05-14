@@ -20,7 +20,7 @@ const _nav = [
     icon: <CIcon icon={cilHome} customClassName="nav-icon" />,
     badge: {
       color: 'info',
-      text: 'NEW',
+      text: 'Novo',
     },
   },
   {
@@ -58,7 +58,7 @@ const _nav = [
   {
     component: CNavItem,
     name: 'Finanças',
-    to: '/money',
+    to: '/financas',
     icon: <CIcon icon={cilMoney} customClassName="nav-icon" />,
   },
   {
@@ -74,7 +74,7 @@ const _nav = [
   {
     component: CNavItem,
     name: 'Meu perfil',
-    to: '/profile',
+    to: '/perfil',
     icon: <CIcon icon={cilUser} customClassName="nav-icon" />,
   },
   {

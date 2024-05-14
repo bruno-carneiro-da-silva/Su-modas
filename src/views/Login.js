@@ -10,6 +10,7 @@ import {
   CContainer,
   CForm,
   CFormInput,
+  CImage,
   CInputGroup,
   CInputGroupText,
   CRow,
@@ -17,6 +18,7 @@ import {
 import CIcon from '@coreui/icons-react'
 import { cilLockLocked, cilUser } from '@coreui/icons'
 import useApi from '../services/api'
+import logo from '../assets/images/sumodas-branco.png'
 
 const Login = () => {
   const [email, setEmail] = useState('')
@@ -105,12 +107,8 @@ const Login = () => {
                 <CCardBody className="text-center">
                   <div>
                     <h2>Cadastrar</h2>
-                    <p className="text-center">
-                      Somos uma empresa dedicada à moda contemporânea, oferecendo uma ampla gama de
-                      roupas que refletem estilo, qualidade e versatilidade. Nossa missão é inspirar
-                      a confiança e a expressão pessoal de nossos clientes, proporcionando peças que
-                      combinam conforto e elegância em cada detalhe.
-                    </p>
+                    <CImage src={logo} className="p-3" width="100%" height={200} />
+
                     <Link to="/register">
                       <CButton color="primary" className="mt-3" active tabIndex={-1}>
                         Cadastre-se agora!

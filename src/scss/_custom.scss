@@ -34,8 +34,9 @@
   font-weight: bold;
 }
 .icon-email{
+  border-radius: 40%;
   border: 1px solid #fff;
-  border-radius: 50%;
+
   padding: 5px;
   color: #fff;
   background-color: #FB7D5B;
@@ -52,6 +53,7 @@
   color: #303972;
   display: flex;
   font-size: 2rem;
+  font-weight: bold;
   align-items: center;
   text-align: center;
   justify-content: start;
@@ -118,4 +120,68 @@ width: 70px;
   margin: 3px;
   display: flex;
   width: 100%;
+}
+.status-complete {
+  color: #4CBC9A;
+}
+
+.status-pending {
+  color: #A098AE;
+}
+
+.status-cancelled {
+  color: #FF4550;
+}
+.user-details-column{
+  align-items: center;
+  justify-content: center;
+  margin: auto,
+}
+.div-user-details{
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+}
+.space-y-3 > :not(template) ~ :not(template) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.gap-4 {
+  gap: 1rem;
+}
+.h-5 {
+  height: 100px;
+  margin-bottom: 40px;
+}
+.bg-gray-500 {
+  --tw-bg-opacity: 0.8;
+  background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
+}
+.rounded {
+  border-radius: 0.25rem;
+}
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+.spinner-container{
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
